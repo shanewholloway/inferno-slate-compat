@@ -17,5 +17,8 @@ const initialState = Raw.deserialize( {
   ]
 }, {terse: true})
 
+// turn on Slate's built-in debugging
+localStorage.debug = 'slate:*'
+
 const onChange = (...args) => console.log({args})
 Inferno.render(<Editor state={initialState} onInput={onChange}/>, document.getElementById("app"))

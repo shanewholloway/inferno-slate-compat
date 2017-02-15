@@ -50,6 +50,6 @@ const rules = [
 module.exports = {
   entry, output,
   resolve, plugins,
-  devtool: "eval-source-map",
+  devtool: "source-map",
   module: {rules}
 }
