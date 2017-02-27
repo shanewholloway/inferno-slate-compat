@@ -1,0 +1,25 @@
+{
+  "name": "inferno-slate-compat",
+  "version": "1.3.0",
+  "description": "Slate compatibility with Inferno instead of React",
+  "main": "index.js",
+  "author": "Brandon Brown and Shane Holloway",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "slate": "^0.17.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "scripts": {
+    "prestart": "npm -s run build",
+    "start": "cd build; http-server -p 8099 .",
+    "watch": "webpack-dev-server --watch",
+    "build": "webpack",
+    "help": "webpack --help"
+  }
+}
